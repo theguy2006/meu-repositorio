@@ -1,0 +1,16 @@
+ @charset "UTF8"
+ 
+ 
+ body{
+  
+        background-image: linear-gradient(to bottom,#314012,#46591C,#A69668);
+      
+      }
+      h1{
+        background-color: olivedrab;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+      }
+      h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
