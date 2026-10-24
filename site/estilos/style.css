@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url('/fontes/idroid.otf') format(opentype); 
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0:#83e1a2;
+    --cor1:#3ddc84;
+    --cor2:#2fa866;
+    --cor3:#1a5c37;
+    --cor4:#063d1e;
+    --cor5:#c5ebd6;
+    --cor6:#dedede;
+
+    --fonte-destaque: "Bebas Neue", sans-serif;;
+    --fonte-android: 'android', cursive;
+    --fonte-padrão: "Barlow", sans-serif;
+
+}
+
+body{
+    background-color: var(--cor5);
+    font-family:var(--fonte-padrão)
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+header h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px black;
+    
+
+}
+
+header > p{
+    font-family: var(--fonte-padrão);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: auto;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
+}
+
+nav > a{
+    color: #f1f1f1;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    
+}
+nav >a:hover{
+    text-decoration: underline;
+    background-color: #2fa866;
+    color: var(--cor4);
+    
+}
+
+main{
+    background-color: #f1f1f1;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #063d1e;
+    font-size: 16px;
+    margin-bottom: 18px;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+/*
+border-top-left-radius: ;
+    border-top-right-radius: ;
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: ;
+*/
+main h1{
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    text-align: center;
+    font-weight: normal;
+    
+
+
+
+}
+main img.pequeno{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+main img{
+    width: 100%;
+}
+main h2{
+    font-family: var(--fonte-android);
+    text-decoration: underline;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    font-weight: n;
+}
+    
+
+
+.comentarios:hover{
+    text-decoration: underline;
+    color:#3ddc84
+    
+    
+    
+}
+.comentarios{
+    background-color: #2fa866;
+
+    
+}
+footer{
+    text-align: center;
+    background-color: var(--cor3);
+    color: white;
+
+}
+
+div.video{
+    background-color: #1a5c37;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+
+}
+
+div.video > iframe{
+position: absolute;
+top: 5%;
+left: 5%;
+width:90% ;
+height:90% ;
+}
+
+
+
+
+
+main strong{
+    color:  var(--cor2);
+    text-decoration: underline;
+
+    
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2fa866;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: #3ddc84;
+}
+h2{
+    color: var(--cor3);
+}
+footer strong:hover{
+    text-decoration: underline;
+    
+}
+footer strong{
+    color: #83e1a2;
+}
+footer a{
+    text-decoration: none;
+}
+aside{
+    background-color: #83e1a2;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.184);
+}
+aside > h3{
+    background-color: var(--cor3);
+    color: #f1f1f1;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+a.externo::after{
+    content: '\00a0\1F517';
+}
